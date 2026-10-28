@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 /* Variaveis para as paletas de cores */
@@ -16,6 +16,11 @@
    --cor-fundo-dica: #fff8e1;
    --cor-borda-dica: #f0ad4e;
    --cor-borda-tabela: #e0d3c4;
+   --cor-marrom-hover: #935f3a;
+   --cor-texto: #333333;
+   --cor-texto-creme: #e6d7c3;
+
+
 }
 
 /* Regra */
@@ -31,7 +36,7 @@ header{
 
 }
 h1{
-    font-size: 30px;
+    font-size: 60px;
 }
 
 p{
@@ -39,8 +44,19 @@ p{
 }
 nav{
     background-color: var(--cor-marrom-medio);
-    padding: 12px;
+    padding: 20px 12px;
+    text-align: center;
 }
+nav a{
+    color: var(--cor-branca);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+nav a:hover{
+    background-color: var(--cor-marrom-hover);
+}
+
 /*
 font-family - propriedade
 Aerial, Helvetica, sans-serif - valor da propriedade
@@ -71,6 +87,16 @@ section p{
 
 
 }
+section li{
+    margin-bottom: 5px;
+}
+section hr{
+    border-top: 2px dotted var(--cor-marrom-medio);
+    margin: 10px 0px;
+}
+section img{
+    width: 100%;
+}
 
 .dica{
     background-color: var(--cor-fundo-dica);
@@ -92,4 +118,32 @@ th, td{
 th{
     background-color: var(--cor-marrom-escuro);
     color: var(--cor-branca);
+}
+
+form label{
+    display: block;
+    margin: 10px 0px 4px;
+    color: var(--cor-marrom-escuro);
+
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--cor-borda-tabela);
+
+}
+
+form button{
+    margin-top: 15px;
+    border: none;
+    background-color: var(--cor-marrom-medio);
+    color: var(--cor-branca);
+    padding:12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: var(--cor-marrom-hover);
 }
