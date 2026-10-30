@@ -147,3 +147,34 @@ form button{
 form button:hover{
     background-color: var(--cor-marrom-hover);
 }
+
+#Delivery{
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(120deg, var(--cor-marrom-escuro), var(--cor-marrom-medio));
+    color: var(--cor-branca);
+}
+
+#Delivery h2{
+    margin-bottom: 10px;
+    border-bottom: none;
+    color: var(--cor-branca);
+    font-size: 30px;
+
+}
+
+.botao{
+    background-color: var(--cor-branca);
+    color: var(--cor-marrom-escuro);
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    text-decoration: none;
+    
+}
+
+.botao:hover{
+    transform: translateY(-3px);
+    background-color: #00fc15;
+    color: #333333;
+}
